@@ -1,41 +1,95 @@
-# MOLARA
+# VEEPAY
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Solana](https://img.shields.io/badge/Solana-Web3-green.svg)](https://solana.com/)
 [![Status](https://img.shields.io/badge/Status-In%20Development-orange.svg)]()
 [![GitHub Issues](https://img.shields.io/github/issues/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/issues)
 
-[![Website](https://img.shields.io/badge/Website-MOLARA-blue?logo=google-chrome)](https://molara.fun/)
-[![Twitter](https://img.shields.io/badge/Twitter-MOLARA-blue?logo=twitter)](https://x.com/MOLARAFORK)
+[![Website](https://img.shields.io/badge/Website-VEEPAY-blue?logo=google-chrome)](https://veepay.life/)
+[![Twitter](https://img.shields.io/badge/Twitter-VEEPAY-blue?logo=twitter)](https://x.com/VEEPAYONX)
 
-```
-$$\      $$\  $$$$$$\  $$\        $$$$$$\  $$$$$$$\   $$$$$$\  
-$$$\    $$$ |$$  __$$\ $$ |      $$  __$$\ $$  __$$\ $$  __$$\ 
-$$$$\  $$$$ |$$ /  $$ |$$ |      $$ /  $$ |$$ |  $$ |$$ /  $$ |
-$$\$$\$$ $$ |$$ |  $$ |$$ |      $$$$$$$$ |$$$$$$$  |$$$$$$$$ |
-$$ \$$$  $$ |$$ |  $$ |$$ |      $$  __$$ |$$  __$$< $$  __$$ |
-$$ |\$  /$$ |$$ |  $$ |$$ |      $$ |  $$ |$$ |  $$ |$$ |  $$ |
-$$ | \_/ $$ | $$$$$$  |$$$$$$$$\ $$ |  $$ |$$ |  $$ |$$ |  $$ |
-\__|     \__| \______/ \________|\__|  \__|\__|  \__|\__|  \__|
+# VEEPAY — The First x402-Enabled MCP Server on Solana
 
-CA: CiXUSUr2hr2Az5QAM2UojdX6zyf5BhckJAPFE3ZEpump
-                                                               
-```
+**VEEPAY** is a next-generation infrastructure that allows autonomous AI agents to **pay on-chain, gain permissions, and execute real transactions on Solana** via a secure x402 endpoint.  
+It transforms blockchain access from uncontrolled execution into a **verifiable, pay-per-action, auditable automation layer**.
 
-Molara is a high-performance Solana fork that embeds Monero-grade privacy directly into its base layer, creating a blockchain where confidentiality is not optional but fundamental. 
+---
 
-Every component of the runtime — transactions, balances, identities, and routing paths — is shielded by default rather than exposed to the public state.
+## 🚀 What VEEPAY Enables
+AI agents can:
+- Pay using SOL or USDC
+- Unlock MCP capabilities through x402 payment validation
+- Simulate and execute on-chain actions
+- Leave a full audit trail for every operation
 
-Through ring-based cryptography and stealth addressing, all on-chain activity becomes fully private and mathematically untraceable. 
+In short — **agents no longer request access; they earn it through payment.**
 
-Observation, analytics, and chain forensics yield no meaningful insights, ensuring that users interact without being monitored, profiled, or tracked.
+---
 
-Unlike privacy solutions that rely on mixers, relays, or auxiliary networks, Molara integrates shielding inside the parallel execution engine itself. 
+## 🧠 Core Architecture
+VEEPAY is built on five integrated layers:
 
-This preserves Solana’s defining advantages — high throughput, low latency, and a seamless developer experience — without sacrificing privacy for performance.
+| Layer | Description |
+|-------|-------------|
+| x402 Payment Gateway | Pay-to-access authentication using Solana payments |
+| MCP Server Layer | Exposes controlled blockchain tools such as `getBalance`, `simulateTx`, `submitTx` |
+| Solana Execution Engine | Builds, simulates, and broadcasts real transactions |
+| Policy & Security Core | Enforces agent permissions, spending limits, and key protection |
+| Observability & Audit Layer | Logs and hashes every action for replayable transparency |
 
-On Molara, individuals transact freely without surveillance, institutions operate without leakage, and builders are no longer forced to choose between speed and confidentiality. 
+---
 
-The network delivers both at the same time.
+## ⚙️ Key Features
+- x402-based on-chain authentication  
+- Full MCP compatibility for AI tool calling  
+- Short-lived access tokens with scope control  
+- Transaction simulation before execution  
+- Rate limiting, spend limits, and action policies  
+- Complete audit log and replayable proofs
 
-Molara represents a shift in blockchain design: a fast execution layer where the right to privacy is not an add-on or a premium feature, but the default state.
+---
+
+## 🪙 How It Works (Lifecycle)
+1. The agent requests access → receives a `402 Payment Required` response  
+2. The agent pays on-chain using SOL/USDC  
+3. VEEPAY verifies the payment and issues a short-lived token  
+4. The agent calls MCP tools (read / simulate / execute)  
+5. All actions and transactions are logged and hashed for auditing
+
+**Pay → Verify → Execute → Record**
+
+---
+
+## 🔒 Security Model
+- Wallet-signature identity validation  
+- KMS/HSM integration for key safety (no exposed signing keys)  
+- Log hashing for tamper-proof auditing  
+- Per-agent policies: spend caps, tool permissions, and rate limits  
+- Protection against replay attacks and uncontrolled execution
+
+---
+
+## 📦 Recommended Stack
+- **Backend:** Rust / Node.js / Python (flexible)  
+- **Blockchain:** Solana + Anchor Framework  
+- **Storage:** PostgreSQL + Redis  
+- **Security:** KMS or HSM for signing logic  
+- **Monitoring:** Prometheus + Grafana + Loki/ELK  
+
+---
+
+## 📌 Status
+VEEPAY is under active development and progressive open-sourcing.  
+The dashboard for users with limited coding experience is **coming soon** and will be updated on the website.
+
+---
+
+## 📄 License
+VEEPAY is an open infrastructure project.  
+Contributions, forks, and audits are welcome.
+
+---
+
+### 🔥 Tagline
+**Pay. Verify. Execute.  
+VEEPAY makes Solana truly machine-accessible.**
