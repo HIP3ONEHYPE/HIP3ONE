@@ -1,17 +1,82 @@
-# PEGNEX
+# KINHEX
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Solana](https://img.shields.io/badge/Solana-Web3-green.svg)](https://solana.com/)
 [![Status](https://img.shields.io/badge/Status-In%20Development-orange.svg)]()
 [![GitHub Issues](https://img.shields.io/github/issues/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/issues)
 
-[![Website](https://img.shields.io/badge/Website-PEGNEX-blue?logo=google-chrome)](https://pegnex.fun/)
-[![Twitter](https://img.shields.io/badge/Twitter-PEGNEX-blue?logo=twitter)](https://x.com/PEGNEXRWA)
+[![Website](https://img.shields.io/badge/Website-KINHEX-blue?logo=google-chrome)](https://kinhex.run/)
+[![Twitter](https://img.shields.io/badge/Twitter-KINHEX-blue?logo=twitter)](https://x.com/KINHEXLABS)
 
-PEGNEX is a composable RWA framework built on Solana that reimagines tokenization from the ground up. Instead of treating real-world assets as static wrapped tokens, PEGNEX transforms them into programmable financial building units that users can freely assemble into their own value systems.
+# Kinhex — Gesture-Based On-Chain Interaction Protocol
 
-At its core, PEGNEX decomposes real-world asset behavior into modules — yield generation, interest-rate response, volatility dynamics, risk-protection logic, and value-distribution rules. These modules act as independent components that can be combined, layered, or replaced to form fully customized financial structures on-chain.
+Kinhex transforms natural hand motion into blockchain commands.  
+No clicks, no buttons — every gesture becomes on-chain execution.
 
-Once deployed, each configuration becomes a self-maintaining on-chain value system. PEGNEX continuously monitors market cycles, volatility regimes, correlations, and performance metrics. When conditions shift, the automated rebalancing engine adjusts the structure to preserve the user’s design intent — protecting capital during downturns, maximizing opportunities during acceleration, and ensuring long-term optimization without manual intervention.
+---
 
-With PEGNEX, financial authorship moves away from institutions and into the hands of individuals. Users no longer simply purchase products — they define how value should behave. RWA becomes a permissionless medium for financial creativity where anyone can architect, evolve, and truly own a custom economic engine powered by Solana.
+## 🚀 What is Kinhex
+Kinhex is an interaction protocol that allows users to perform on-chain actions through hand gestures tracked in real time.  
+The protocol replaces traditional UI interactions with motion, enabling minting, swapping, voting, claiming, and more — all triggered by gestures.
+
+---
+
+## 🔄 How It Works
+1. The camera detects hand movement and recognizes the gesture locally.
+2. The gesture is converted into a cryptographic command mapped to an on-chain action.
+3. The wallet signs and the blockchain completes execution — motion becomes command.
+
+---
+
+## ✨ Features
+- Gesture-first Web3 interaction  
+- Local hand-tracking (no video uploaded or stored)  
+- Wallet signing preserved for full security  
+- Works with standard webcams and phone cameras  
+- Lightweight SDK for developers  
+- Native Solana support, with multi-chain expansion planned
+
+---
+
+## 📦 Installation (SDK)
+```bash
+npm install @kinhex/sdk
+```
+
+---
+
+## 🧩 Basic Usage
+```
+import { Kinhex } from "@kinhex/sdk";
+
+const kinhex = new Kinhex();
+
+kinhex.onGesture("PINCH", () => mintNFT());
+kinhex.onGesture("FIST", () => vote(proposalId));
+kinhex.onGesture("WAVE", () => swap(tokenA, tokenB));
+```
+
+---
+
+## 📁 Folder Structure
+
+```
+/sdk
+  core
+  gestures
+  mapping
+  utils
+/demo
+  basic-mint-example
+  gesture-swap
+  livestream-demo
+```
+
+```
+Kinhex does not bypass wallet permissions.
+Every interaction still requires approval through the wallet signing flow.
+Gesture recognition runs locally to ensure privacy and safety.
+```
+
+
+
